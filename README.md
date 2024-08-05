@@ -1,4 +1,4 @@
-# RSS Downloader Script
+# Pod2Radio
 
 This script is designed to automate the downloading and management of podcast episodes from multiple RSS feeds. It allows you to configure various options, including keeping the latest episode, keeping episodes for each weekday, and retaining a specified number of the most recent episodes.
 
