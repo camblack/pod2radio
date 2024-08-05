@@ -2,6 +2,8 @@
 
 This script is designed to automate the downloading and management of podcast episodes from multiple RSS feeds. It allows you to configure various options, including keeping the latest episode, keeping episodes for each weekday, and retaining a specified number of the most recent episodes.
 
+Note: This script is mainly designed to run on Windows systems in conjunction with an automation system such as StationPlaylist, etc
+
 ## Features
 
 - Download the latest episode from an RSS feed.

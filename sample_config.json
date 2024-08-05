@@ -1,0 +1,62 @@
+
+{
+    "rss_feeds": [
+        {
+            "url": "https://example.com/rss_feed_1.xml",
+            "output_directory": "show_1",
+            "min_duration": 60,
+            "output_filename": "latest_episode.mp3",
+            "keep_latest": true
+        },
+        {
+            "url": "https://example.com/rss_feed_2.xml",
+            "output_directory": "show_2",
+            "min_duration": 30,
+            "output_filename": "latest_episode.mp3",
+            "keep_latest": true
+        },
+        {
+            "url": "https://example.com/rss_feed_3.xml",
+            "output_directory": "show_3",
+            "output_filename": "latest_episode.mp3",
+            "min_duration": 300,
+            "keep_latest": true,
+            "keep_weekdays": true,
+            "weekday_filenames": {
+                "Monday": "monday_episode.mp3",
+                "Tuesday": "tuesday_episode.mp3",
+                "Wednesday": "wednesday_episode.mp3",
+                "Thursday": "thursday_episode.mp3",
+                "Friday": "friday_episode.mp3",
+                "Saturday": "saturday_episode.mp3",
+                "Sunday": "sunday_episode.mp3"
+            }
+        },
+        {
+            "url": "https://example.com/rss_feed_4.xml",
+            "output_directory": "show_4",
+            "output_filename": "latest_episode.mp3",
+            "min_duration": 300,
+            "keep_latest": true,
+            "keep_weekdays": true,
+            "weekday_filenames": {
+                "Monday": "monday_episode.mp3",
+                "Tuesday": "tuesday_episode.mp3",
+                "Wednesday": "wednesday_episode.mp3",
+                "Thursday": "thursday_episode.mp3",
+                "Friday": "friday_episode.mp3",
+                "Saturday": "saturday_episode.mp3",
+                "Sunday": "sunday_episode.mp3"
+            }
+        },
+        {
+            "url": "https://example.com/rss_feed_5.xml",
+            "output_directory": "show_5",
+            "output_filename": "latest_episode.mp3",
+            "min_duration": 300,
+            "keep_latest_n": 5
+        }
+    ],
+    "download_folder": "C:\media\rss_downloads",
+    "check_interval": 3600
+}
