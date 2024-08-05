@@ -1,8 +1,8 @@
-h1. RSS Downloader Script
+# RSS Downloader Script
 
 This script is designed to automate the downloading and management of podcast episodes from multiple RSS feeds. It allows you to configure various options, including keeping the latest episode, keeping episodes for each weekday, and retaining a specified number of the most recent episodes.
 
-h2. Features
+## Features
 
 - Download the latest episode from an RSS feed.
 - Keep episodes for specific weekdays.
@@ -10,7 +10,7 @@ h2. Features
 - Set minimum duration thresholds for episodes.
 - Manage episodes from multiple RSS feeds, even when stored in the same directory.
 
-h2. Requirements
+## Requirements
 
 - Python 3.x
 - `requests` library
@@ -18,21 +18,21 @@ h2. Requirements
 - `mutagen` library
 - `psutil` library
 
-h2. Installation
+## Installation
 
-# **Install Python 3.x**: Ensure Python 3.x is installed on your system. You can download it from [python.org|https://www.python.org/].
-# **Install Required Libraries**: Open a command prompt and run the following commands to install the necessary libraries:
-    {code}
+1. **Install Python 3.x**: Ensure Python 3.x is installed on your system. You can download it from [python.org](https://www.python.org/).
+2. **Install Required Libraries**: Open a command prompt and run the following commands to install the necessary libraries:
+    ```sh
     pip install requests feedparser mutagen psutil
-    {code}
-# **Download the Script**: Save the `rss_downloader.py` script to a directory of your choice (e.g., `C:\downloader`).
-# **Create Configuration File**: In the same directory as the script, create a file named `config.json` with your configuration.
+    ```
+3. **Download the Script**: Save the `rss_downloader.py` script to a directory of your choice (e.g., `C:\\downloader`).
+4. **Create Configuration File**: In the same directory as the script, create a file named `config.json` with your configuration.
 
-h2. Configuration
+## Configuration
 
 The `config.json` file defines the RSS feeds and their respective options. Here is a basic example:
 
-{code:json}
+```json
 {
     "rss_feeds": [
         {
@@ -94,9 +94,9 @@ The `config.json` file defines the RSS feeds and their respective options. Here 
     "download_folder": "C:\\media\\rss_downloads",
     "check_interval": 3600
 }
-{code}
+```
 
-h3. Configuration Options
+### Configuration Options
 
 - **url**: The URL of the RSS feed.
 - **output_directory**: The directory where episodes will be saved.
@@ -107,21 +107,21 @@ h3. Configuration Options
 - **weekday_filenames**: A dictionary mapping weekdays to filenames.
 - **keep_latest_n**: An integer specifying the number of most recent episodes to keep.
 
-h2. Running the Script
+## Running the Script
 
-# **Open Command Prompt**: Press `Win + R`, type `cmd`, and press Enter.
-# **Navigate to the Script Directory**: Use the `cd` command to navigate to the directory where you saved `rss_downloader.py` and `config.json` (e.g., `C:\downloader`):
-    {code}
-    cd C:\downloader
-    {code}
-# **Run the Script**:
-    {code}
+1. **Open Command Prompt**: Press `Win + R`, type `cmd`, and press Enter.
+2. **Navigate to the Script Directory**: Use the `cd` command to navigate to the directory where you saved `rss_downloader.py` and `config.json` (e.g., `C:\\downloader`):
+    ```sh
+    cd C:\\downloader
+    ```
+3. **Run the Script**:
+    ```sh
     python rss_downloader.py
-    {code}
+    ```
 
 The script will run indefinitely, checking the RSS feeds at the interval specified in `config.json` (`check_interval` is in seconds).
 
-h3. Example Usage
+### Example Usage
 
 Here is an example of the expected behavior with the provided configuration:
 
